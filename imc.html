@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMC</title>
+</head>
+
+<script>
+  function pulaLinha() {
+
+    document.write("<br>");
+    document.write("<br>");
+  }
+
+  function mostra(frase) {
+
+    document.write(frase);
+    pulaLinha();
+  }
+
+  function calculaImc(peso, altura) {
+
+    var imc = peso / (altura * altura);
+    return imc;
+  }
+
+  var nome = prompt ("Informe seu nome: ");
+  var peso = prompt (nome + ", informe seu peso: ");
+  var altura = prompt (nome + ", informe sua altura: ");
+  var imc = calculaImc(peso, altura);
+  mostra(nome + ", o seu IMC é: " + imc);
+
+  if (imc < 18.5) {
+    mostra(nome + ", você precisa elevar esse número!")
+  }
+
+  else if (imc > 35) {
+    mostra(nome + ", você precisa reduzir esse número!")
+  }
+
+  else {
+    mostra (nome + ", seu imc está na faixa aceitável! :D")
+  }
+
+</script> 

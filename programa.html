@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programa Teste</title>
+</head>
+
+<script>
+  alert("Minha idade é:");
+</script>
+
+<script>
+  function pulaLinha() {
+
+    document.write("<br>");
+    document.write("<hr>");
+    document.write("<br>");
+
+  }
+
+  function mostra(frase) {
+
+    document.write(frase);
+    pulaLinha();
+  }
+
+  mostra("Eu acertei " + 15 / 50 * 100 + "% das questões");
+
+  var IDADE1 = 10;
+  var IDADE2 = "20";
+  var IDADE3 = 12;
+
+  mostra("<big>A média das idades é </big>");
+
+  mostra((IDADE1 + IDADE2 + IDADE3) / 3);
+
+</script>
+
+<script>
+  var ano = 2016;
+
+  mostra("Flávio tem " + (ano - 1977) + " anos");
+
+  mostra("Joaquim tem " + (ano - 1996) + " anos");
+
+  ano = 2017;
+  mostra("Barney tem " + (ano - 1976) + " anos");
+
+</script>
